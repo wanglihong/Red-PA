@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Red-PA
+
+  Created by Dennis Yang on 12-9-25.
+  Copyright (c) 2012年 Dennis Yang. All rights reserved.
+*/
+CFBundleDisplayName="中国";
+
+"unreachable" = "无网络连接！";
+"loading" = "正在加载...";

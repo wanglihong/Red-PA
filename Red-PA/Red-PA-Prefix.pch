@@ -1,0 +1,60 @@
+//
+// Prefix header for all source files of the 'Red-PA' target in the 'Red-PA' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <QuartzCore/QuartzCore.h>
+#endif
+
+//
+// Paths
+//
+#define docPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] //沙盒的Documents路径
+
+//
+// iPhone5
+//
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+//
+// Some colors used in app
+//
+#define background_red  [UIColor colorWithRed:230.0/255.0 green:029.0/255.0 blue:043.0/255.0 alpha:1.0]
+#define old_red         [UIColor colorWithRed:197.0/255.0 green:025.0/255.0 blue:037.0/255.0 alpha:0.85]
+#define old_red_full    [UIColor colorWithRed:197.0/255.0 green:025.0/255.0 blue:037.0/255.0 alpha:1.0]
+#define milky_white     [UIColor colorWithRed:238.0/255.0 green:238.0/255.0 blue:238.0/255.0 alpha:1.0]
+#define milky_white_transparent  [UIColor colorWithRed:238.0/255.0 green:238.0/255.0 blue:238.0/255.0 alpha:0.25]
+#define title_color     [UIColor colorWithRed:125.0/255.0 green:000.0/255.0 blue:008.0/255.0 alpha:1.0]
+#define high_light      [UIColor colorWithRed:238.0/255.0 green:238.0/255.0 blue:238.0/255.0 alpha:.75]
+
+//
+// The host address
+//
+#define BASE_URL_STRING @"http://catholic.cokepa.com" //@"http://www.cokepa.com" //
+#define HOST_ADDRESS @"catholic.cokepa.com" //@"www.cokepa.com" //
+
+//
+// Sina WeiBo appKey and appSecret
+//
+#define kWBSDKDemoAppKey @"2502612969"
+#define kWBSDKDemoAppSecret @"784239aa39675b2fd5992042b7f8881e"
+#define kWBRedirectURI @"http://letspa.umaman.com"
+
+//
+// Weixin appId
+//
+#define kWeixinAppId @"wxa9943872d55432a8"
+
+//
+// Other constants
+//
+#define content_width 226
+#define _page_size 10
